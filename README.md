@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+# Blackjack Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Blackjack Banner](./assets/banner.png)
 
-## Available Scripts
+Welcome to **Blackjack**, a web-based implementation of the classic card game Blackjack built with React and TypeScript. Challenge the dealer, strategize your moves, and try to reach 21 without going bust!
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Demo](#demo)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Standard Blackjack Rules**: Play by the classic rules of Blackjack.
+- **Interactive UI**: Responsive and intuitive user interface built with React.
+- **Card Rendering**: Visual representation of playing cards with suit icons.
+- **Game State Management**: Manage game phases including betting, playing, dealer's turn, and game over.
+- **React 18 Compatible**: Utilizes the latest React features for optimal performance.
+- **TypeScript**: Strongly typed codebase for enhanced reliability and maintainability.
 
-### `npm test`
+## Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Try out the live version of the game [here](https://your-deployment-link.com).
 
-### `npm run build`
+*Note: Replace the above link with your actual deployment URL.*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Initial Deal
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Initial Deal](./assets/initial-deal.png)
 
-### `npm run eject`
+### Player Hits
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Player Hits](./assets/player-hits.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Dealer's Turn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Dealer's Turn](./assets/dealers-turn.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Game Over
 
-## Learn More
+![Game Over](./assets/game-over.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*Note: Ensure to add actual screenshots in the `assets` folder and update the paths accordingly.*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
+
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript.
+- [Lucide React](https://lucide.dev/) - Icons for React.
+- [CSS](https://developer.mozilla.org/docs/Web/CSS) - Styling the application.
+- [Create React App](https://create-react-app.dev/) - Toolchain for React applications.
+
+## Getting Started
+
+Follow these instructions to set up and run the project on your local machine.
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- **Node.js** (v14 or above): [Download Node.js](https://nodejs.org/)
+- **npm** (comes with Node.js) or **yarn**
+
+### Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/your-username/blackjack.git
+   cd blackjack

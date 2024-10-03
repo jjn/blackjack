@@ -32,25 +32,6 @@ Try out the live version of the game [here](https://your-deployment-link.com).
 
 *Note: Replace the above link with your actual deployment URL.*
 
-## Screenshots
-
-### Initial Deal
-
-![Initial Deal](./assets/initial-deal.png)
-
-### Player Hits
-
-![Player Hits](./assets/player-hits.png)
-
-### Dealer's Turn
-
-![Dealer's Turn](./assets/dealers-turn.png)
-
-### Game Over
-
-![Game Over](./assets/game-over.png)
-
-*Note: Ensure to add actual screenshots in the `assets` folder and update the paths accordingly.*
 
 ## Technologies Used
 

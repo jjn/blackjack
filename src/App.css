@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+.blackjack-game {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hands {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  width: 100px;
+  height: 140px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  position: relative;
+  font-family: 'Courier New', monospace;
 }
 
-.App-link {
-  color: #61dafb;
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card::before {
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+
+.card::after {
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+}
+
+.card.hidden {
+  background-color: #b0b0b0;
+}
+
+.card-back {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    #606dbc,
+    #606dbc 10px,
+    #465298 10px,
+    #465298 20px
+  );
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-value {
+  font-size: 24px;
+  font-weight: bold;
+  align-self: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.card-value.red {
+  color: #d32f2f;
+}
+
+.card-value.black {
+  color: #212121;
+}
+
+.card-suit {
+  align-self: center;
+  font-size: 48px;
+  position: relative;
+  z-index: 2;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+.game-status {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
 }

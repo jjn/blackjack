@@ -6,7 +6,6 @@ Welcome to **Blackjack**, a web-based implementation of the classic card game Bl
 
 - [Features](#features)
 - [Demo](#demo)
-- [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)

@@ -1,7 +1,5 @@
 # Blackjack Game
 
-![Blackjack Banner](./assets/banner.png)
-
 Welcome to **Blackjack**, a web-based implementation of the classic card game Blackjack built with React and TypeScript. Challenge the dealer, strategize your moves, and try to reach 21 without going bust!
 
 ## Table of Contents

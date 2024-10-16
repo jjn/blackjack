@@ -1,0 +1,8 @@
+{
+  "name": "Blackjack Dev Container",
+  "tasks": {
+    "launch": "npm i && npm start",
+    "build": "npm i && npm run build",
+    "test": "npm i && npm run test"
+  }
+}

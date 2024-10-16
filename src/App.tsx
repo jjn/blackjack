@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Heart, Diamond, Club, Spade } from 'lucide-react';
 import './App.css'
 
@@ -48,20 +48,14 @@ const BlackjackGame: React.FC = () => {
   const [dealerHand, setDealerHand] = useState<PlayingCard[]>([]);
   const [gameStatus, setGameStatus] = useState<string>('');
 
-
-  useEffect(() => {
-    startNewGame();
-  }, []);
-
-  const startNewGame = () => {
+  const startNewGame = useCallback(() => {
     const newDeck = createDeck();
     shuffleArray(newDeck);
     setDeck(newDeck);
     setPlayerHand([newDeck.pop()!, newDeck.pop()!]);
     setDealerHand([newDeck.pop()!, newDeck.pop()!]);
     setGameStatus('');
-  
-  };
+  }, []);
 
   const shuffleArray = (array: any[]) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -69,6 +63,10 @@ const BlackjackGame: React.FC = () => {
       [array[i], array[j]] = [array[j], array[i]];
     }
   };
+
+  useEffect(() => {
+    startNewGame();
+  }, [startNewGame]);
 
   const hit = () => {
     if (gameStatus) return;
